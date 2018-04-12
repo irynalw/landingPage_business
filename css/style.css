@@ -1,0 +1,508 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: fontello;
+    src: url(../fonts/fontello.woff),
+    url(../fonts/fontello.woff2);
+}
+
+/*
+* {
+    outline: 1px solid green;
+}  */
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #868686;  
+    line-height: 1.5;
+}
+.content{
+    max-width: 1140px;
+    margin: 0 auto;           
+    font-size: 1.3rem;   padding: 10rem 0;
+}
+
+
+.header, .menu, form, .about-content, .services, .prices, .steps, .clients {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+}
+
+.banner, .about-us, .happy-clients{
+     color:white;
+}
+
+.heading{
+    font-size:2.5rem; 
+    font-weight:800;
+    text-align:center;
+    color: #394b50;  
+    padding:5px;
+}
+.your-business .heading, .about-item .heading, .happy-clients .heading{
+    color:white;
+}
+
+
+.banner{
+background: url("https://i.pinimg.com/736x/2f/51/45/2f51457ea027dfbd8a6e3cc75e474352--nd-street-new-york-city-street.jpg");
+    /* padding:100px 70px 150px;
+    margin: 0 auto;
+    text-align: left;
+    color: rgb(168, 172, 196);
+    font-weight: bold; */
+    box-shadow: inset 0 0 0 1000px rgba(0, 123, 255, 0.4);
+}
+
+
+.text{
+    font-size:1.6rem; 
+    text-align:center;
+   margin-bottom:4rem;  
+   padding:5px;
+}
+.btn{
+    color:white;
+    background: #ffbb42;
+    border:solid 1px #ffbb42;  
+    padding: 10px;
+}
+.btn:active {
+    background: #eba32e;
+    border:solid 1px #dd9923;
+}
+.btn:hover {
+    border:solid 1px #dd9923;
+}
+input:hover, .client-item:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }   
+
+
+/*  HEADER  */
+.header{
+    margin: 2.5rem auto;
+    padding:0;
+}
+.logo{
+    height:50px; width:50px;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: contain;
+}
+.menu{
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: #868686;
+    text-decoration:none;
+    padding: 2rem;
+    line-height:0.1;
+}
+a:hover{
+    background: #ffbb42;
+    color:white;
+}
+.logo:hover{
+   transform: rotate(90deg);
+   transition:0.8s;
+}
+
+
+/* BANNER */
+.banner{
+   /* background: #709dca; */
+    height:70vh;
+    position:relative;
+}
+.your-business{
+    padding-bottom:34rem;
+}
+form{
+    padding-top:35px;
+    justify-content:space-around;
+}
+form input{
+    width:21%;
+    padding:1rem;
+    font-family: fontello, Arial;
+}
+
+
+/*  OUR SERVICES  */
+.our-services{
+    padding-top:16rem;
+}
+.services{
+    margin: 70px 0 0;
+}
+.service-item{
+    width:47%;
+    display:flex;
+    margin-bottom:70px;
+}
+.icon{
+    font-family: fontello;
+    font-size: 4.5rem;
+    color: #709dca;
+    width: 14rem;  margin:0 10px;
+}
+.service-item:hover .icon{
+    color: #ffbb42;
+}
+.service-item:hover .service-name{
+    color: #709dca;
+}
+.service-name{
+    font-weight: bold;
+}
+
+
+/*  ABOUT US  */
+
+.about-us{
+    background: #ffc155 url(../img/about-pic.png) center left no-repeat;
+    /*height:50vh;*/  
+    background-size: 50% 100%;
+}
+.about-content{
+    justify-content: flex-end; 
+}
+
+.about-item{
+    width:50%;
+    height:100%;
+    padding: 60px 0 60px 70px;
+    box-sizing: border-box;
+}
+.about-item .heading, .about-item .text{
+    text-align: left;
+}
+.about-item .text{
+    margin:1.5rem 0 3rem;
+}
+.read-btn{
+    border:solid 1px #dfa23a;
+}
+
+
+/*  PRICES */
+.choose-price{  
+    background: #e7edf3;
+    padding: 5rem 0;
+}
+.plan{
+    width:33.3%;
+    text-align: center;
+    padding:5rem 3rem;
+    box-sizing: border-box;
+    background: white;
+    margin: 2rem 0;
+    border:1px solid #e7edf3;
+}
+.plan:hover{
+    background: #709dca; 
+    transition: 0.8s;
+    color:white;
+    margin: 0;
+    padding: 7rem 3rem;
+}
+.plan-name{
+    font-size: 2.4rem;
+    padding-bottom:1rem;
+}
+.plan-price{
+    font-size: 1.4rem;
+    padding-bottom:1.8rem;
+}
+.plan-term{
+    border-top:1px solid #c5c5c5;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+.price{
+    font-size: 4rem;
+    color: #ffc155;
+    font-weight:bold;
+}
+
+
+/*  HOW IT WORKS */
+.steps{
+    flex-wrap:nowrap;
+    text-align: center;  
+    justify-content: center;
+}
+.step-icon{
+    font-size: 6.5rem;
+    width:100%;
+    padding:8rem 0;
+}
+.step-name{
+ color:#545353;
+ font-size: 2rem;
+ font-weight: bold;
+}
+.step-text{
+line-height: 1.5;
+}
+.row{
+    width:15%;
+    height:80px;
+    overflow:visible;
+}
+.row-down{
+    align-self: center;
+}
+.get-start-btn{
+    margin: 8rem auto;
+    text-align: center;
+}
+.step:hover .step-icon{
+    color: #ffc155;
+}
+.step:hover .step-name{
+    color: #709dca;
+}
+
+/*  CLIENTS */
+.happy-clients{
+    background: #ffc155;
+    
+ }
+.clients{
+    align-items: space-around;
+}
+.client-item{
+    width:48.5%;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #868686;
+    background: white;
+    margin:20px 5px 0 5px;
+}
+.client-icon {
+    width:124px;
+    height:124px;
+    padding-left:10px;
+}
+.client-text{
+    padding: 40px 15px;
+    line-height:1.8;
+}
+.client-name{
+    color: #f6772c;
+}
+
+
+
+/*  NEWSLETTER */
+.contact-form{
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+}
+.contact-form input{
+    width:27%;
+}
+
+.address{
+    background: url(../img/map.png);
+    padding: 40px 0 150px;
+}
+.address-buble{
+    background: #394b50;
+    border-radius:140px;
+    width:280px;
+    line-height:2;
+    text-align: center;
+    padding:6rem 0;
+}
+.address-heading{
+    font-weight: bold;
+    color:white;
+}
+.address-email{
+    color: #ffc155;
+}
+.arrow{
+    width:0;
+    border:8px solid transparent;
+    border-top: 8px solid #394b50;
+}
+.address-buble, .arrow, .logotype{
+    margin:0 auto;
+}
+.address-buble:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/*  FOOTER */
+.footer .content {
+    padding:1rem;
+}
+.social .icon{
+    font-family: fontello;
+    margin:5px;
+    font-size: 2rem;
+}
+.copyright{
+    background: #709dca;
+    color:white;
+    text-align:center;
+    padding:10px 4px;
+    font-size:1.3rem;
+}
+.phone, .social{
+    text-align: center;
+    font-size: 2rem;
+    padding-top:2rem;
+    font-family: arial, fontello;
+    color: #41565c;
+}
+.copyright{
+    margin-top: 20px;
+}
+.icon a{
+    padding: 0;
+    color: #709dca;
+}
+.icon:hover a{
+    background: transparent;
+    color: #ffc155;
+}
+.phone:hover{
+    font-weight: 600;
+}
+
+.up{
+    position: fixed;
+    bottom:1%;
+    left: 87%;    /*  ?????? */
+}
+.up-arrow{
+    width:0;
+    border:20px solid transparent;
+    border-bottom: 20px solid #4181c1;
+}
+.up-arrow:hover{
+     border-bottom: 20px solid #2068b1;
+}
+.home{
+    padding:0;
+}
+.home:hover{
+    background: transparent;
+}
+
+
+
+ /*  RESPONSIVE */
+
+ @media (max-width:1200px) {
+    .about-us{
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    }
+    .about-item{
+        padding: 60px 0 60px; 
+        margin: 0 auto;
+        width:90%; 
+        align-self: center;
+        
+    }
+    .about-item, .about-item .text, .about-item .heading{
+        text-align:center;
+    }
+    .read-btn:hover{
+        background-color:  #bf831d;
+    }
+    .read-btn:active{
+        box-shadow: 0 0 10px rgba(248, 248, 248, 0.7);
+        outline: none;
+    }
+ }
+ 
+ @media (max-width:885px) {
+    .content{
+        margin:0;
+    }
+    .header .logo{
+        display: none;
+    }
+   .menu a{
+       padding: 2rem 1.5rem;
+   }
+   .header{
+       justify-content: center;
+   }
+   form input, .contact-form input{
+    width: 51%; 
+    margin:10px auto;
+}
+.banner{ height:80vh;}
+}
+
+
+@media (max-width: 761px) {  
+    .menu{
+        display: none;
+    }
+    .prices, .steps, .clients{
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    .client-item{
+        width:80%;
+    }
+    .plan, .step {
+        width:51%;
+    }
+    .row{
+        display:none;
+    }
+    .banner{ height:80vh;}
+    
+}
+
+
+@media (max-width: 513px) {
+    .services{
+        display:block;
+    }    
+    .service-item, .plan{
+        width:90%;
+        margin: 4rem auto;
+    }  
+    .client-item{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }  
+    .client-icon{
+        padding-top:20px;
+    } 
+    .address{ 
+        background-repeat:no-repeat; 
+        background-size:contain; padding-bottom:0;
+    }
+    .address-buble{
+        width: 213px;
+        padding: 2rem 0 2.5rem;
+    }
+   
+
+    .content, .about-content {
+        padding: 5rem 0;
+    }
+    .header{
+        padding:0;
+    }
+}
+
+
